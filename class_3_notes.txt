@@ -1,0 +1,31 @@
+Regex = sequence of characters is called regex
+ANI = Artificial Narrow Intelligence (Particular task like machine translator)
+AGI = Artificial General Intelligence (Everything  man can do)
+
+level 1 = chatbot
+level 2 = reasoning
+level 3 = agents
+level 4 = innovators
+level 5 = organization
+
+NLP = National Language Processing  
+ANN = Artificial Neural Network (deep learning)
+
+Technical skills need to be learnt
+1. Programming language (python)
+2. AI frameworks like PyTorch
+3. API development
+4. ML DL algorithm
+5. LLM fine tuning (NLP)
+6. Cloud information (AI powered API)
+7. CI/CD Pipeline (Continuous integration/development)
+8. Container (Docker)
+9. Kubernetes
+
+GPT = Generative Pre trained Transformer
+
+dice.com ------> for remote job in America 
+
+focus on fastapi for back end development 
+
+

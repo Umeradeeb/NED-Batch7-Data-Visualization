@@ -1,0 +1,75 @@
+Regex -----> sequence of characters (read character by character or search use regex)
+
+
+ETL----> Extract, transform and load
+
+for validations (like password criteria etc) ----> python package is pydantic 
+
+data extract ----> SQL alchemy
+
+SQL model is the combination of SQL alchemy and pydantic
+
+All packages are kept on pypi.org 
+
+Poetry (package relevant jobs) is used for package management their directories, for publishing of package and many more
+
+POWERSHELL CLASSWORK:-
+Created package project1 in project1
+PS C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry> ls
+
+
+    Directory: C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/31/2024   9:56 PM                project1
+
+
+PS C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry> cd project1/
+PS C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry\project1> cd project1
+PS C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry\project1\project1> ls
+
+
+    Directory: C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry\project1\project1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         8/31/2024   9:56 PM              0 __init__.py
+
+
+PS C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry\project1\project1> cd..
+PS C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry\project1> ls
+
+
+    Directory: C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry\project1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/31/2024   9:56 PM                project1
+d-----         8/31/2024   9:56 PM                tests
+-a----         8/31/2024   9:56 PM            291 pyproject.toml
+-a----         8/31/2024   9:56 PM              0 README.md
+
+
+PS C:\Users\MAK TECH\Desktop\PGD python\NED-Batch7-Data-Visualization\03-Poetry\project1>
+
+for eg:- version = "0.1.0" means ----> first 0 implies core frame work, 1 implies addition or deletion of function, 0 impliesremoval of bugs
+
+TOML stands for Tom's Obvious, Minimal Language. A TOML file is a simple way to store configuration settings in a format that's easy for both humans and computers to read. It's similar to a text file, where you can write down settings, but it's structured in a way that makes it organized.
+
+poetry add numpy (for numpy)
+
+The purpose of .lock file is to ensure that it will run in future even after 25 years or more
+
+pytest is a package for QA testing
+poetry add pytest
+poetry run pytest
+test file should be in tests folder and its name should be like for example test_main.py
+
+
+
+
+

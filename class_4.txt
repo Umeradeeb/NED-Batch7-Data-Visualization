@@ -1,0 +1,23 @@
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+Any microservice base is docker
+
+Docker -----> right one run anywhere (code will run on every OS)
+
+Basic thing is image in docker
+
+markdown extension is md
+
+ctrl+shift+view for visualization mode on vscode
+
+Image is a blue print in computer like class. 
+
+image is used to make containers in dockers
+
+every software official image (with blue tick) is present in dockerhub.com
+
+in command prompt
+1. docker version
+2. docker -v
+3. docker run hello-world or docker pull hello-world
+
