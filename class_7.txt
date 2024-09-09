@@ -1,0 +1,3 @@
+SQL ----> Structured query language
+
+Server up (scalable---> unlimited traffic, system wont hang because is docorized)

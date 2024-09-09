@@ -1,0 +1,25 @@
+version: '3.8'                    #version of yaml syntax (docker compose)
+name : postgres_class             #container or system name
+services:                         # database and configuations in services
+  postgress_db:
+    image: postgres:latest        #latest is default tag which mean most recent version of postgres image will be downloaded
+    restart: always               #whenever container stopped or run or up again this micro service will run again. Image will be downloaded once
+    container_name: postgresCont
+    environment:                  #sensitive info like api keys, db password, anything secure we make OS variables. Linux OS level hacking is not easy
+      - POSTGRES_USER=umeradeeb
+      - POSTGRES_PASSWORD=my_password
+      - POSTGRES_DB=mydatabase
+    ports:
+      - '5433:5432'               #normally both base os and linux ports are same but to avoid conflict, it is different because it will run on different places
+    volumes:
+      - postgres_db:/var/lib/postgresql/data     #right side path is of container
+
+
+# postgres_db folder is created to mount with linux container, means whatever is here will be available there in linux
+
+volumes:                                         #mounting of folder postgres_db locally
+  postgres_db:
+   driver: local
+networks:                                        #can make multiple micro services
+  default:
+   driver: bridge
