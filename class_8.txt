@@ -1,0 +1,36 @@
+-RDBMS ----> Relational database management system
+
+-after select (fix keyword) we write comma separated name of columns
+
+-after from (reserve keyword) we write table name
+
+-to maintain your standard write reserve keywords in capital (otherwise no issue you can write in small alphabets)
+
+* means all column
+
+-data manipulation ddl --> data define language
+dml ---> data manipulation language (no impact on real data)
+
+-the process of picking data from multiple tables and combining it into one table can be referred to as data joins
+
+-database is saved on servers like bank data
+
+-to get data and bring data on your computer is called client like pg admin
+
+-by help of client, we connect with server and write query, the query execute there and the data respond and shows here
+
+-primary key (PK)---> the column which don't repeat in the table i.e. unique in whole table
+
+-foreign key (FK)---> if a primary key of one table repeat in other table then it called foreign key
+
+-table.column name
+
+-cross join means table 1 first row connect with all rows of table 2 and table 2 first row connect with all rows of table 2 etc
+
+-WHERE in sql is a reserved keyword for conditions
+
+-for proper join use keywords JOIN and ON
+
+-JOIN means to join two or more tables together and connect their data based on relation
+
+
