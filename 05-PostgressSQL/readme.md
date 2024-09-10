@@ -61,7 +61,7 @@ FROM
 	teachers;
 ```
 
-### q5 cross join(wrong way)
+### q5 cross join (wrong way)
 ```sql
 SELECT
 	students.student_id,
@@ -115,7 +115,7 @@ l2 : [int] = [3,5,20,100]
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 
-### q8 (same as q7 using WHERE)
+### q8 (same q7 using WHERE)
 ```sql
 SELECT
 	students.student_id,
