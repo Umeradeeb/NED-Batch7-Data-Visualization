@@ -133,3 +133,82 @@ WHERE
 	students.teacher_id = teachers.teacher_id AND 
 	students.student_id = fees.student_id;
 ```
+
+# Dated: 23 Aug 2024
+
+### Actual query
+```sql
+SELECT COUNT(DISTINCT city) FROM Customers;
+```
+
+### Alternate Query (Query within a query)
+```sql
+SELECT COUNT(*) FROM (SELECT DISTINCT City FROM Customers);
+```
+
+### BETWEEN (Between a certain range)
+```sql
+SELECT * FROM Customer
+WHERE CustomerID BETWEEN 10 AND 20;
+```
+
+### IN (To specify multiple possible values for a column)
+```sql
+SELECT * FROM Customer
+WHERE CustomerID IN (1,3,20,50);
+```
+
+```sql
+SELECT * FROM Customer
+Where Country='Germany' OR Country='UK";
+```
+
+#Alternate Query
+```sql
+SELECT * FROM Customer
+Where Country IN ('Germany', 'UK');
+```
+### LIKE (Search for a pattern like Regex)
+```sql
+SELECT * FROM Customer
+Where City LIKE %san%;
+```
+
+### ORDER BY
+```sql
+SELECT * FROM Products
+ORDER BY Price DESC;
+```
+
+### INSERT 
+```sql
+SELECT * FROM students
+INSERT INTO students (student_id, student_name, teacher_id)
+VALUES (11, 'Umer Adeeb', 1)
+
+INSERT INTO students
+VALUES (12, 'Amna Younus', 2)
+```
+
+### INSERT multiple data
+```sql
+INSERT INTO students(student_id, student_name, teacher_id)
+VALUES 
+(13, 'Ammarah Affan', 1),
+(14, 'Abeeha', 3),
+(15, 'Muhammad Usman', 2)
+```
+
+### NULL
+```sql
+SELECT * FROM students
+WHERE student_name IS NULL
+```
+
+### UPDATE
+```sql
+UPDATE students
+SET
+student_name = 'Iqra'
+WHERE student_id = 16
+```

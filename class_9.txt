@@ -1,0 +1,3 @@
+-normalization means to stop data repetition 
+
+-SELECT DISTINCT shows unique values
