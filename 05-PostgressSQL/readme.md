@@ -212,3 +212,134 @@ SET
 student_name = 'Iqra'
 WHERE student_id = 16
 ```
+
+### DELETE
+```sql
+DELETE FROM students
+WHERE student_id = 16
+```
+
+### Create new table for deleting data and table person
+```sql
+-- Creating the teachers table
+CREATE TABLE staff (
+    staff_id SERIAL PRIMARY KEY,
+    staff_name VARCHAR(100),
+    salary VARCHAR(50)
+);
+
+INSERT INTO STAFF
+VALUES (1, 'Ali', 200000), (2, 'Hamza', 300000)
+
+SELECT * FROM staff
+```
+
+### DELETE
+```sql
+DELETE FROM staff
+```
+
+### DROP TABLE (Deleting whole table structure)
+```sql
+DROP TABLE staff
+```
+
+### LIMIT (it will pick top 5 rows)
+```sql
+SELECT * FROM students
+WHERE teacher_id = 1
+LIMIT 5
+```
+
+### AGGREGATE FUNCTIONS
+```sql
+SELECT * FROM fees
+SELECT MAX(fee_amount) FROM fees
+SELECT MIN(fee_amount) FROM fees
+
+SELECT MAX(fee_paid_date) FROM fees
+SELECT MIN(fee_paid_date) FROM fees
+
+SELECT AVG(fee_amount) FROM fees
+SELECT SUM(fee_amount) FROM fees
+```
+
+### GROUP BY
+```sql
+SELECT * FROM students
+SELECT MIN(student_id), teacher_id from students
+Group by teacher_id
+```
+
+### COUNT
+```sql
+SELECT COUNT(student_id), teacher_id from students
+Group by teacher_id
+
+Select * from students
+select count(distinct teacher_id) from students
+
+select count(distinct teacher_id) as "uni teachers" from students
+```
+
+### GROUP
+```sql
+SELECT * FROM (SELECT ProductID, SUM(Quantity) AS [Total product orders]
+              FROM OrderDetails
+              GROUP BY ProductID)
+ORDER BY [Total product orders] DESC
+```
+
+### JOINING AND SUM
+```sql
+SELECT  teacher_id, SUM(fee_amount) 
+FROM students
+LEFT JOIN fees ON students.student_id = fees.student_id
+group by teacher_id;
+```
+
+```sql
+SELECT * FROM Customers
+WHERE CustomerID NOT IN (SELECT CustomerID FROM Orders);
+```
+
+### BETWEEN WITH DATE
+```sql
+SELECT * from fees
+where 
+fee_paid_date BETWEEN '2024-01-01' AND '2024-12-31'
+```
+
+### ALIAS
+```sql
+select 
+	student_id as "Roll No",
+	student_name as "Name"
+from students
+```
+
+### INNER JOIN STUDENTS WITH TEACHERS AND STUDENTS WITH FEES
+```sql
+select * from students
+select * from teachers
+select * from fees
+
+select * from students s
+inner join teachers t on s.teacher_id = t.teacher_id
+
+select * from students s
+inner join fees f on s.student_id = f.student_id
+```
+
+### JOINING THREE TABLES
+```sql
+select * from students s
+inner join fees f on s.student_id = f.student_id
+inner join teachers t on s.teacher_id = t.teacher_id
+```
+
+
+
+
+
+

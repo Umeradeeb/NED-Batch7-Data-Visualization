@@ -92,3 +92,113 @@ SELECT
 FROM 
 	students s inner join teachers t on s.teacher_id = t.teacher_id,
     students st inner join fees f on st.student_id = f.student_id;
+
+
+select count(distinct student_name) from students
+
+SELECT * FROM students;
+
+INSERT INTO students (student_id, student_name, teacher_id)
+VALUES (11, 'Umer Adeeb', 1)
+
+INSERT INTO students
+VALUES (12, 'Amna Younus', 2)
+
+INSERT INTO students(student_id, student_name, teacher_id)
+VALUES 
+(13, 'Ammarah Affan', 1),
+(14, 'Abeeha', 3),
+(15, 'Muhammad Usman', 2)
+
+INSERT INTO students
+VALUES (16,NULL, 2)
+
+SELECT * FROM students
+WHERE student_name IS NULL
+
+UPDATE students
+SET
+student_name = 'Iqra'
+WHERE student_id = 16
+
+DELETE FROM students
+WHERE student_id = 16
+
+-- Creating the teachers table
+CREATE TABLE staff (
+    staff_id SERIAL PRIMARY KEY,
+    staff_name VARCHAR(100),
+    salary VARCHAR(50)
+);
+
+INSERT INTO STAFF
+VALUES (1, 'Ali', 200000), (2, 'Hamza', 300000)
+
+SELECT * FROM staff
+
+DELETE FROM staff
+
+DROP TABLE staff
+
+
+SELECT * FROM students
+WHERE teacher_id =1
+LIMIT 5
+
+
+SELECT * FROM fees
+SELECT MAX(fee_amount) FROM fees
+SELECT MIN(fee_amount) FROM fees
+
+SELECT MAX(fee_paid_date) FROM fees
+SELECT MIN(fee_paid_date) FROM fees
+
+SELECT AVG(fee_amount) FROM fees
+SELECT SUM(fee_amount) FROM fees
+
+SELECT * FROM students
+SELECT MIN(student_id), teacher_id from students
+Group by teacher_id
+
+SELECT * FROM students
+SELECT COUNT(student_id), teacher_id from students
+Group by teacher_id
+
+Select * from students
+select count(distinct teacher_id) as "uni teachers" from students
+
+SELECT  teacher_id, SUM(fee_amount) 
+FROM students
+LEFT JOIN fees ON students.student_id = fees.student_id
+group by teacher_id;
+
+
+
+SELECT  teacher_id, AVG(fee_amount) 
+FROM students
+LEFT JOIN fees ON students.student_id = fees.student_id
+group by teacher_id;
+
+Select * from students
+
+select 
+	student_id as "Roll No",
+	student_name as "Name"
+from students
+
+
+--- Joining
+
+select * from students
+select * from teachers
+select * from fees
+
+select * from students s
+inner join teachers t on s.teacher_id = t.teacher_id
+
+select * from students s
+inner join fees f on s.student_id = f.student_id
+
+select * from students s
+inner join fees f on s.student_id = f.student_id
+inner join teachers t on s.teacher_id = t.teacher_id

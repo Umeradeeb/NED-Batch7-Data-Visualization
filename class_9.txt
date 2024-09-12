@@ -1,3 +1,13 @@
 -normalization means to stop data repetition 
 
 -SELECT DISTINCT shows unique values
+
+- always use WHERE clause with DELETE 
+
+-to delete the table completely use DROP TABLE
+
+-use square bracket or double quotations depending on database, if you want to write multi word column name
+
+-IN operator is an alternate of OR gate in SQL query
+
+-
