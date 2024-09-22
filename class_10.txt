@@ -1,0 +1,12 @@
+- numpy means numerical python
+
+- pandas is to handle tabular data
+
+- numpy allow you ----> without using loop you can apply any mathematical operation on array
+
+-array vs list
+array ---> all data types will be same in array
+list ----> data types can be multiple of each element
+
+-pandas ---> a powerful data analysis and manipulation library for python
+
